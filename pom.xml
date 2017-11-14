@@ -27,5 +27,6 @@
   <modules>
   	<module>CustomWebServices</module>
   	<module>PagingAndSortingExample</module>
+  	<module>StoredProceduresExample</module>
   </modules>
 </project>
