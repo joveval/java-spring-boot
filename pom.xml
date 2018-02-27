@@ -29,5 +29,6 @@
   	<module>PagingAndSortingExample</module>
   	<module>StoredProceduresExample</module>
   	<module>HelloWorld</module>
+  	<module>PropertiesFileExample</module>
   </modules>
 </project>
