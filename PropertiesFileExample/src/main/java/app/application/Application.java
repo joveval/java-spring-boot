@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,6 +43,9 @@ public class Application {
 		@Autowired
 		RunTimeConf runtimeConf;
 		
+		@Autowired
+		ExternalConf externalConf;
+		
 		@Value("${app.name}")
 		private String myAppName;
 
@@ -57,6 +61,9 @@ public class Application {
 			Map<String, Object> map = new HashMap<String, Object>();
 			map.put("app-runtime-prod", runtimeConf.getProd());
 			map.put("app-runtime-create-database", runtimeConf.getCreateDatabase());
+			map.put("ext-dbpath",externalConf.getDbpath());
+			map.put("ext-param1", externalConf.getParam1());
+			
 			return ResponseEntity.ok(map);
 		}
 		
@@ -86,6 +93,27 @@ public class Application {
 		
 	}
 	
+	
+	
+	@Component
+	@PropertySource(value="classpath:external-params.properties",ignoreResourceNotFound=true)
+	public static class ExternalConf{
+		
+		@Value("${ext.dbpath}")
+		private String dbpath;
+
+		@Value("${ext.param1}")
+		private String param1;
+		
+		public String getDbpath() {
+			return dbpath;
+		}
+
+		public String getParam1() {
+			return param1;
+		}
+		
+	}
 	
 	
 
