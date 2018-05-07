@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: PagingAndSortingExample
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: root
+Built-By: Usuario
 Implementation-Vendor-Id: com.example
-Build-Jdk: 1.8.0_151
+Build-Jdk: 1.8.0_141
 Implementation-URL: http://projects.spring.io/spring-boot/SpringExampl
  es/PagingAndSortingExample/
 Created-By: Maven Integration for Eclipse
