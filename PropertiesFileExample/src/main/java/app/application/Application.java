@@ -48,10 +48,13 @@ public class Application {
 		
 		@Value("${app.name}")
 		private String myAppName;
+		
+		@Value("${db.api.name}")
+		private String apiName;
 
 		@GetMapping("/test/properties")
 		public ResponseEntity<?> readPropertiesFileValues(){
-			String appName = "My app name is "+myAppName;
+			String appName = "My app name is "+myAppName+" and api name is "+apiName;
 			return ResponseEntity.ok(appName);
 		}
 		
