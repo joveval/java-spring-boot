@@ -9,5 +9,6 @@ package app.controller;
  */
 public interface RoutingConstants {
 
-	public final static String WS_ALUMONS_EP="/alumnos/paged";
+	public final static String WS_ALUMNOS_EP="/alumnos/paged";
+	public final static String WS_ALUMNOS_FL="/alumnos/filtered";
 }

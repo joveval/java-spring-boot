@@ -30,5 +30,7 @@
   	<module>StoredProceduresExample</module>
   	<module>HelloWorld</module>
   	<module>PropertiesFileExample</module>
+  	<module>PredicatesExample</module>
+  	<module>LambdaExpAndMethodRefExample</module>
   </modules>
 </project>
