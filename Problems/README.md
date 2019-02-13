@@ -27,5 +27,5 @@
 { minVal: -50 }
 ```
 
-## 3. Create an web page.
+## 3. Create a web page.
 Create a web page that prints hello world {name}. Where name is a parameter passed as a path variable. Example: localhost:8080/hello/José -> prints hello world José.	
