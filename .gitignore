@@ -4,3 +4,6 @@
 */.settings/*
 .settings/*
 *.reveng.xml
+*.class
+*.jar*
+*target*
