@@ -32,5 +32,6 @@
   	<module>PropertiesFileExample</module>
   	<module>PredicatesExample</module>
   	<module>LambdaExpAndMethodRefExample</module>
+  	<module>Problems</module>
   </modules>
 </project>
