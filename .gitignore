@@ -1,0 +1,11 @@
+# Doesn´t include target file
+
+*/target/
+*.jar
+*.class
+*.classpath
+*/.settings/*
+*/.settings
+*/bin/*
+*.reveng.xml
+*.project

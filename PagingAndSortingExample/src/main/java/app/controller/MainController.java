@@ -27,7 +27,7 @@ public class MainController {
 	@Autowired
 	AlumnoService alumnoService;
 	
-	@GetMapping(RoutingConstants.WS_ALUMNOS_EP)
+	@GetMapping(value=RoutingConstants.WS_ALUMNOS_EP,produces="application/json")
 	public ResponseEntity<?> getAlumnos(@PageableDefault Pageable p,PagedResourcesAssembler<Alumno> assembler){
 		
 		Page<Alumno> alumnos = alumnoService.findAll(p);
