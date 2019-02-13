@@ -1,0 +1,4 @@
+app\application\Application$ExternalConf.class
+app\application\Application$DummyClass.class
+app\application\Application.class
+app\application\Application$RunTimeConf.class
