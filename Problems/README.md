@@ -67,4 +67,20 @@ Given a String parameter: `original`. You must return another String with all ch
 ```  
 After accomplishing this, create a JUnit test to validate this the above example.
 
+# @Repository
+
+## 1. Create a @Repository to save, update, delete, and search an @Entity
+Create a repository to persist, update, delete and make request (with filters) to a database (mysql) table called Transaction.
+Transaction must have the following attributes: 
+```
+id (int,autoincrement)
+trans_name (varchar(100))
+trans_date (date)
+amount (double)
+```
+## 2. Publish as web service (without using data rest)
+Publish save, update, delete, and findAll (paged) as web service (hint: create a @RestController and use @PostMapping,@PutMapping,@DeleteMapping and @GetMapping respectively)
+
+## 3. Create a JUnit unit test
+Create a JUnit test to consume those web services and validate correct response of each one.
 	
