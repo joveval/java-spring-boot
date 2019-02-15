@@ -52,4 +52,19 @@ Given two parameters: `w` and `d`. You must create a tree of random numbers (fro
 }
 ```  
 
+
+
+## 2. Create a @Component and @Service to upper case a string.
+Create a @Component class and define inside a function to upper case each letter of a String variable passed as input parameter. Then create a @Service class that calls this external function and finally return the result as a ResponseEntity.
+Given a String parameter: `original`. You must return another String with all characters upper-cased.
+*	Input: `original = 'hoLa mundo 2019'`
+*	Output: JSON
+```
+{
+	original: 'hoLa mundo 2019',
+	upperCased: 'HOLA MUNDO 2019'
+}
+```  
+After accomplishing this, create a JUnit test to validate this the above example.
+
 	
