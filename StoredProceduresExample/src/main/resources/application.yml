@@ -1,0 +1,18 @@
+logging:
+  level:
+    app: DEBUG
+spring:
+  data:
+    rest:
+      basePath: /api
+  datasource:
+    password: MyPassword
+    url: jdbc:sqlserver://127.0.0.1\SQL2014;databaseName=MY_DB
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+    show-sql: true
