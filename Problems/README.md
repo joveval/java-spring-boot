@@ -84,3 +84,22 @@ Publish save, update, delete, and findAll (paged) as web service (hint: create a
 ## 3. Create a JUnit unit test
 Create a JUnit test to consume those web services and validate correct response of each one.
 	
+
+# @RepositoryRestResource
+
+## 1. Publish a CRUD Api Rest.
+Using a schema as minimum as this:
+
+```
+a --> b <-- c
+```
+create a CRUD RESTful API using `spring-data-rest`. Make these search methods:
+```
+findAll
+findBy
+	- an Integer field n
+	- between some dates a and b
+	- like some string s
+	- between dates a and b AND less than some value v
+```
+	
